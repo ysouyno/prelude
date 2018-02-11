@@ -13,3 +13,9 @@
 ;; dracula theme
 (prelude-require-package 'dracula-theme)
 (load-theme 'dracula t)
+
+;; Use the <tab> to fill the path
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+
+;; line number
+(global-linum-mode 1)
